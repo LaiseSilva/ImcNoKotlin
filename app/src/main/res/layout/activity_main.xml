@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculando IMC"
+        android:textSize="50sp"
+        />
+
+    <EditText
+        android:id="@+id/altura"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite sua altura"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:id="@+id/peso"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:hint="Digite seu peso"
+        android:textSize="30sp"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="25dp"
+        />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/calcular"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Calcular"/>
+
+
+        <Button
+            android:id="@+id/sair"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Sair"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/black"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/valorimc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text=""
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/classificacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="35dp"
+        android:text=""
+        />
+
+
+</LinearLayout>
